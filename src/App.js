@@ -10,9 +10,9 @@ import SignUp from "./Components/SignUp/SignUp";
 const App = () => {
   return (
     <div>
-      {/* <Navbar /> */}
+      <Navbar />
       {/* <CreateProduct /> */}
-      <SearchProduct />
+      {/* <SearchProduct /> */}
       {/* <Address /> */}
     </div>
   );

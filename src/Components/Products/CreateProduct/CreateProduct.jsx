@@ -22,7 +22,6 @@ const CreateProduct = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
   const [addProduct, setAddProduct] = useState(dummyData);
-  
 
   const [searchRes, setSearchRes] = useState(addProduct);
 

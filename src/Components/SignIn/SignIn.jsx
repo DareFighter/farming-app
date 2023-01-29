@@ -8,9 +8,12 @@ import axios from "axios";
 
 const SignIn = () => {
   const [signInData, setSignInData] = useState({
-    number: "",
-    otp: "",
+    email: "",
+    password: "",
   });
+
+  const { showAfterLogin, setShowAfterLogin } = useState(false);
+  const [res, setRes] = useState(null);
 
   const [showSignUp, setShowSignUp] = useState(false);
 
@@ -26,9 +29,13 @@ const SignIn = () => {
     e.preventDefault();
     console.log(signInData);
     axios
-      .post(localBaseUrl + "/api/v1/public/auth/login-verify-otp", signInData)
-      .then((res) => console.log(res))
+      .post(localBaseUrl + "/api/v1/public/auth/token", signInData)
+      .then((res) => setRes(res))
       .catch((err) => console.log(err));
+    if (res?.status == 200) {
+      setShowAfterLogin(true);
+      setShowSignUp(true);
+    }
   };
   return (
     <>
@@ -41,19 +48,19 @@ const SignIn = () => {
                 <form onSubmit={onSubmitHandlerSignInData}>
                   <div className="mt-3">
                     <Input
-                      label={"number or emailAddress or mobile number"}
-                      value={signInData.number}
-                      name={"number"}
+                      label={"email or emailAddress or mobile email"}
+                      value={signInData.email}
+                      name={"email"}
                       handleChange={onChangeHandlerSignInData}
                       sx={{ width: 400 }}
                     />
                   </div>
                   <div className="mt-3 mb-2">
                     <Input
-                      label={"otp"}
-                      value={signInData.otp}
+                      label={"password"}
+                      value={signInData.password}
                       handleChange={onChangeHandlerSignInData}
-                      name={"otp"}
+                      name={"password"}
                       sx={{ width: 400 }}
                     />
                   </div>
