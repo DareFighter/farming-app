@@ -1,0 +1,50 @@
+[
+    {
+        "img":"https://upload.wikimedia.org/wikipedia/commons/9/90/Hapus_Mango.jpg",
+        "description":"This is about mango",
+        "name":"mango",
+        "price":"800",
+        "quantity":"2Kg",
+        "id":"0"
+    },
+    {
+        "img":"https://subzfresh.com/wp-content/uploads/2022/04/apple_158989157.jpg",
+        "description":"This is about apple",
+        "name":"apple",
+        "price":"400",
+        "quantity":"4Kg",
+        "id":"1"
+    },
+    {
+        "img":"https://upload.wikimedia.org/wikipedia/commons/b/ba/Jackfruit_hanging.JPG",
+        "description":"This is about jackfruit",
+        "name":"jackfruit",
+        "price":"700",
+        "quantity":"8Kg",
+        "id":"2"
+    },
+    {
+        "img":"https://cdn.britannica.com/99/143599-050-C3289491/Watermelon.jpg",
+        "description":"This is about watermelon",
+        "name":"watermelon",
+        "price":"600",
+        "quantity":"6Kg",
+        "id":"3"
+    },
+    {
+        "img":"https://healthybuddha.in/image/cache/catalog/Pineapple2-500x515.jpg",
+        "description":"This is about pineapple",
+        "name":"pineapple",
+        "price":"1000",
+        "quantity":"4Kg",
+        "id":"4"
+    },
+    {
+        "img":"https://economictimes.indiatimes.com/thumb/msid-90396410,width-1200,height-900,resizemode-4,imgsize-153676/adani-wilmar-rice.jpg?from=mdr",
+        "description": "This is about rice",
+        "name":"Rice",
+        "price":"200",
+        "quantity":"4kg",
+        "id":"5"
+        }
+]

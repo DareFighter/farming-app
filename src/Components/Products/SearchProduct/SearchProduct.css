@@ -1,0 +1,8 @@
+.sp1 {
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px gray;
+}
+
+.sp0 {
+  box-shadow: 5px 5px 5px gray;
+}
